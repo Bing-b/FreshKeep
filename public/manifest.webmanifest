@@ -1,0 +1,18 @@
+{
+  "name": "FreshKeep 食品保质期记录",
+  "short_name": "FreshKeep",
+  "description": "记录食品名称和过期时间，并在临期或过期时提醒。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f7f2",
+  "theme_color": "#2f7f61",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
