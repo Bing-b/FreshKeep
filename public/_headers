@@ -1,0 +1,15 @@
+# Prevent Service Worker from being cached by the CDN
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Ensure Web Manifest has the correct MIME type and caching
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Enable HSTS and other security headers
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
