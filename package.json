@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "preinstall": "npx only-allow pnpm"
   },
+  "packageManager": "pnpm@8.15.8",
   "dependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
     "vite": "^8.0.0",
